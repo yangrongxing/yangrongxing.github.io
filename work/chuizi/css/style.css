@@ -1,0 +1,358 @@
+
+
+
+
+
+/********  reset  ********/
+*{padding: 0;margin: 0;list-style: none;border: 0;}
+
+
+.main{width: 750px;background-image:url(../images/bj.jpg);
+	overflow: hidden; margin: 0 auto;
+    background-color: #fffcd0;}
+
+
+/*******第一页样式 *********/
+
+
+.logo{
+	height: 140px;
+}
+.logo img{
+	width: 155px;height: 59px;
+	margin-top: 26px;margin-left: 30px;
+}
+
+.solgan{
+	height: 200px;
+	text-align: center;
+}
+.solgan img{
+	width:632px;height:191px;
+}
+.list{
+	height: 750px;
+	text-align: center;
+	margin-top: 60px;
+	position: relative;
+
+}
+.list ul{ position: relative;
+	
+}
+.list_img1{
+	display: none;
+	width: 119px;
+	height: 116px;
+	position: absolute;
+}
+.list_img1 img{
+	width: 119px;
+	height: 116px;
+}
+.list ul li{
+	display: inline-block;
+	width:370px;height:195px;
+	position: relative;
+}
+
+.list ul li img{width:160px;height: 145px;
+                position: absolute;
+                left: 100px;
+            }
+ 
+
+.list_img .open,
+.list_img .chui,
+.list_img .cai{
+	opacity: 0;
+	transition: all 1s;
+}
+.list_img .cai{
+	transform: scale(0.5);
+	top: -55px;
+
+}
+.list_img.on .cai{
+	transform: scale(1);
+}
+
+.list_img .chui{
+	transform: rotate(30deg);
+	top: -85px;
+	left: 140px;
+}
+.list_img.on .chui{
+	transform: rotate(0);
+	z-index: 10;
+}
+
+.list_img.on .close{
+	display: none;
+}
+.list_img.on .open,
+.list_img.on .chui,
+.list_img.on .cai{
+	opacity: 1;
+}
+
+
+.list_btn{height:200px;
+          }
+
+.list_btn button{
+	width:478px;
+	height: 88px;
+	margin-top: 30px;;
+	background-color:#f39800;
+    border-radius:8px;    
+    font-family: "微软雅黑";
+    font-size: 36px;color: #fff;
+    }
+  
+ .list_btn  button:hover{
+ 	background-color: #ea6500;
+ 	color: black;
+ 	transition: all 0.5s;
+ }
+.list_btn p{
+	color: #f5ab40;
+	font-size: 20px;
+	line-height: 40px;
+}
+.state{
+	width: 660px;
+	margin: 0 auto;
+	margin-top:50px;
+	font-family: "黑体";
+	color: #f5ab40;
+	
+}
+.state h2{
+	height: 125px;
+	line-height: 125px;
+	font-size: 30px;
+	
+}
+.state p{
+	font-size: 22px;
+	line-height: 34px;
+}
+.state p span{
+	font-size: 16px;
+}
+.mask{
+	position: fixed; width: 750px; left: 50%; top: 0; height: 100%;
+	background: rgba(0,0,0,0.8); margin-left: -375px;
+	z-index: 99;
+	display: none;
+/*	transform: scale(0);
+	transition: all 0.5s;*/
+}
+.mask.on{
+	/*transform: scale(1);*/
+}
+
+.pop{
+	width: 500px;
+	height: 300px;
+    background-color: #fff799;
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    margin-top: -150px;
+    left: 120px;
+    z-index: 3;
+    overflow: hidden; 
+    transform:scale(0);
+    transition: all 0.5s;
+}
+.pop.on{transform:scale(1);}
+.pop div{
+	width:500px;
+	height: 160px;
+	color: #646464;
+	font-size: 30px;
+
+}
+.pop div p{
+	width: 360px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.pop button{
+	width: 500px;
+	height: 90px;
+	background-color:#f5ab40;
+	color: #fff;
+	font-size: 40px; cursor: pointer;
+}
+
+.foot{
+	height: 120px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: #F5AB40;
+	text-align: center;
+	margin-top: 60px;
+}
+
+
+
+/*第二页样式*/
+
+
+
+.prize{
+	height: 410px;;
+	margin-top: 100px;
+	text-align: center;
+}
+.register{
+	width: 750px;
+	height: 500px;
+	text-align: center;
+	 position: relative;
+
+	
+	
+}
+.register input{
+    width:600px;
+    height: 90px;
+    border-bottom: 1px solid #e6e6e6;
+    font-family: "微软雅黑";
+    font-size: 24px;
+   
+    
+}
+.register input:first-child{
+	border-top-left-radius: 10px;
+	border-top-right-radius:10px;
+	padding-left: 10px;
+}
+.register input:nth-child(3){
+	
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius: 10px;
+	padding-left: 10px;
+	
+}
+.register input:nth-child(4){
+	position: absolute;
+	top:110px;
+	left: 450px;
+	width:198px;
+    height: 50px;
+	background-color: white;
+	border-bottom: none;
+	
+	color: #f39800;
+	border-left: 2px solid #F5AB40;
+	
+	
+	
+}
+.register input:last-child{
+	margin-top: 40px;
+	background-color: #f39800;
+	font-size: 24px;
+	color: #fffcd0;
+}
+
+
+
+
+
+
+/*第三页样式*/
+
+
+
+.view{
+	width: 525px;
+	height:260px;
+	margin: 0 auto;
+	margin-top: 200px;
+	border: 3px solid #f8c156;
+	background-color: #fffcd0;
+	
+}
+.view div{
+	width:330px;
+	height: 100px;
+	border: 7px solid #f39800;
+	margin: 0 auto;
+	padding: 65px 85px;
+	font-size: 26px;
+	color:#f39800;
+	margin-top: 8px;
+	
+	}
+.down{
+	height: 400px;
+	margin-top: 260px;
+	text-align: center;
+	
+	
+	
+}
+.down button{
+	width:600px;
+	height: 90px;
+	background-color:#f39800 ;
+	border-radius: 10px;
+	font-size: 36px;
+	font-family: "微软雅黑",sans-serif;
+	color: #fffcd0;
+}
+.down p{
+	color: #f39800;
+	font-size: 20px;
+	font-family: "微软雅黑",sans-serif;
+	margin-top: 40px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
