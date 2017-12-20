@@ -1,0 +1,245 @@
+@font-face {
+	font-family:MyriadSetPro-Thin;
+	src: url('../font/MyriadSetPro-Thin.ttf');
+	font-family:MyriadSetPro-Ultralight;
+	src: url('../font/MyriadSetPro-Ultralight.ttf');
+}
+
+
+*{margin: 0;padding: 0;list-style: none;}
+a{display: block;text-decoration: none;font-family: "MyriadSetPro-Thin";}
+h2,h3{font:78px/140px "MyriadSetPro-Thin";color: #000;}
+p{font:49px/80px "MyriadSetPro-Ultralight";text-indent:66px;color: #040000;margin-bottom: 30px;padding: 0 20px; }
+img{border: 0;}
+.wrapper{width: 1080px;margin: 0 auto;}
+
+
+
+.head{background: #666; height: auto; overflow: hidden; text-align: center; }
+.logo,
+.nav,
+.search{
+	display: inline-block;
+}
+.nav ul{height: 35px; line-height: 35px; text-align:center; overflow: hidden;}
+.nav ul li{
+	display:inline-block;
+	margin: 0 10px;
+}	
+.nav ul li a{
+	color: #fff;
+	height: 35px;
+	margin-top: -10px;
+}
+.logo a{
+	background: url(../images/logo.png) no-repeat;
+	}
+.search a{
+	background: url(../images/search.png) no-repeat;
+}
+
+.logo a,.search a{
+	width: 80px; height: 35px;
+	background-position: center;
+	/*background-position-y: 12px;*/
+}
+.nav.wrapper{
+	width: auto;
+}
+/*.show img{
+	max-width: 100%;
+	min-width: 1080px;
+}*/
+
+
+
+
+.effect_l{height: 538px;overflow: hidden;}
+.effect_l a{
+	width: 454px;
+	font-size: 30px;
+	color: #36b0fa;
+	margin-top: 260px;
+}
+.effect_l a:first-child{float: left;}
+.effect_l a:last-child{float: right;}
+.effect_l a img{position: relative;top: 20px}
+.effect_img{text-align: center;}
+.effect_con h2{text-align: right;}
+
+.a_class{font-size: 62px;color: #1b7fbe;margin: 10px 0 50px 0;padding-left: 20px;}
+
+
+
+.display{background: #f5f5f5;}
+.dis_img{padding-top: 188px;text-align:center;}
+.dis_con{margin-top: 80px;}
+.dis_con h2{
+	font-size: 60px;
+	text-align: center;
+}
+
+
+
+.material{
+	/*height: 1066px;*/
+	position: relative;
+	
+}
+.mat_l{
+	width: 825px;
+	margin-top: 160px;
+	}
+.mat_l h2{
+	text-align: center;
+	font-size: 54px;
+}
+.mat_l p{width: 820px;}
+
+
+
+.mat_r{
+	position: absolute;
+	top: 0;
+	right: -335px;
+	
+}
+
+
+
+.mirror{
+	background: #f5f5f5;
+	position: relative; text-align: center;
+}
+.mir_img{
+	padding-top: 125px;
+	text-align: center; display: inline-block;
+	/*width: 1920px;*/ position: relative;
+}
+.mir_sd{
+	width: 11.81%;
+	position: absolute;
+	top: 13.84%;
+	left: 25.40%;
+
+}
+.mir_arrow{
+	width: 2.68%;
+	position: absolute;
+	top: 41.97%;
+	left: 30.71%;
+}
+.mir_con h2{
+	font-size: 73px;
+}
+
+
+
+.cpu{
+	position: relative;
+}
+.cup_l{
+	position: absolute;
+	width: 594px;
+	left: -317px;
+	top: 240px;
+}
+.cup_r{
+	width: 770px;
+	float: right;
+	margin-top: 150px;
+	
+}
+.clear{clear: both;}
+.cup_r h2{
+	text-align: right;
+	
+}
+
+
+.recording{
+	background: #f5f5f5;
+}
+.rec_img{
+	padding-top: 88px;
+	text-align: center;
+}
+.rec_con h2{
+	margin: 0;
+	text-align: center;
+	line-height: 90px;
+}
+.rec_con h3{
+	font-size: 70px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.rec_con h3 sup{
+	position: relative;
+	left: -25px;
+}
+
+.bra_img{
+	margin-top: 120px;
+	text-align: center;
+	
+}
+.bra_con h2{
+	font-size: 70px;
+}
+
+
+.img_down{
+	background: #f5f5f5;
+	padding: 100px 0 240px 0;
+	text-align: center;
+}
+
+
+.foot h2{
+	font-size: 273px;
+	text-align: center;
+	color: #1b7fbe;
+	line-height: 3;
+}
+
+
+.gh{
+	position: absolute; right: 20px; top: 0; cursor: pointer;
+	height: 40px; width: 40px; display: none; z-index: 9999999;
+}
+.gh a{
+	width: 30px; height: 2px; background: #fff;
+    display: block; position: relative; top: 17px; left: 5px;
+	transition: all 0.5s;
+}
+.gh a:before,
+.gh a:after{
+	width: 30px; height: 2px; background: #fff;
+	position: absolute; left: 0;
+	content: "";
+	transition: all 0.5s;
+}
+.gh a:before {
+	top: -8px;
+}
+.gh a:after {
+	top: 8px;
+}
+
+body.on .gh a{
+	background-color: transparent;
+}
+body.on .gh a:before,
+body.on .gh a:after{
+	top: 0;
+}
+body.on .gh a:before{
+	transform:rotate(45deg);
+}
+body.on .gh a:after{
+	transform:rotate(-45deg);
+}
+
+
+
