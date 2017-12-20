@@ -1,0 +1,271 @@
+html{
+	font-size: 10px; /*基值*/
+}
+
+*{list-style: none; margin: 0; padding: 0; border: 0;}
+.loading{
+    background: #14110f;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.loading h2{
+	margin-top: 50%;
+	text-align: center;
+	color: #f6dc77;
+}
+.layout{
+		 margin: 0 auto; background: #000;
+		 display: none;
+		}
+.page1,.page2,.page3{
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	        
+}
+.logo{    
+    padding-top: 2vh;
+    width: 78px;
+    margin: 0 auto;
+}
+.active .logo{
+	animation: bounceInDown 1s 0.2s both;
+}
+.logo img{
+	width: 78px; height: 19px;
+}
+.solgan{
+	width: 242px;
+	margin: 0 auto;
+	margin-top: 1vh;
+}
+.active .solgan{
+	animation: flip 1s 0.2s both;
+}
+.solgan img{
+	width: 242px; height: 175.5px;
+}
+.list{
+	height: 230px;
+	background-image: url(../images/04.png);
+	background-repeat: repeat-y;
+	background-position: center;
+	position: relative;
+	margin-top: 1vh;
+}
+.txt{
+	font-size: 10px;
+	color: #b99c63; margin-left: 20px;
+}
+.list ul li{
+	width: 50%; 
+	position: relative; height: 55px;	
+}
+.list ul li:nth-child(odd){
+      margin-left: 50%;
+}
+.list ul li:nth-child(even){
+	text-align: right;
+}
+.list ul li:nth-child(even) .dot{
+	left: auto; right: -6px;
+}
+.list ul li:nth-child(even) .txt{
+	margin-left: 0; margin-right: 20px;
+}
+.active .list ul li:first-child{
+	animation: fadeInRight 1s 0.2s both;
+}
+.active .list ul li:nth-child(2){
+	animation: fadeInLeft 1s 0.4s both;
+}
+.active .list ul li:nth-child(3){
+	animation: fadeInRight 1s 0.6s both;
+}
+.active .list ul li:nth-child(4){
+	animation: fadeInLeft 1s 0.8s both;
+}
+.active .list ul li:nth-child(5){
+	animation: fadeInRight 1s 1s both;
+}
+.dot{
+	background: url(../images/03.png) no-repeat;
+	background-size: cover;
+	width: 12.5px; height: 12.5px;
+	position: absolute; left: -6px; top: 0;
+}
+.arrow{
+	width: 30px;
+	margin: 0 auto;
+	margin-top: 1vh;
+}
+.page1 .arrow{
+	margin-top: 4vh;
+}
+
+.arrow img{
+	width:30px;
+	height:30px;
+}
+.active .arrow{
+	animation: bounceInUp 1s 1.5s both;
+}
+
+/*第2页样式*/
+.page2.active .solgan{
+	animation: rotateInDownRight 1s 0.2s both;
+}
+.list_img{
+	width:300px;
+    margin: 0 auto;
+	overflow: hidden;
+	margin-top: 2vh;
+	margin-bottom: 3vh;
+	
+}
+.list_img ul{
+	overflow: hidden;
+}
+.list_img ul li{
+	width:78px;
+	height:78px;
+	float:left;
+    margin:0 10px 10px;
+}
+
+.list_img img{
+	width:78px;
+	height:78px;
+	border-radius: 12px;
+	
+}
+.active .list_img ul li:nth-child(1){
+	animation: fadeInUp 0.8s 0.5s both;
+}
+.active .list_img ul li:nth-child(2){
+	animation: fadeInUp 0.8s 0.7s both;
+}
+.active .list_img ul li:nth-child(3){
+	animation: fadeInUp 0.8s 0.9s both;
+}
+.active .list_img ul li:nth-child(4){
+	animation: fadeInUp 0.8s 1.1s both;
+}
+.active .list_img ul li:nth-child(5){
+	animation: fadeInUp 0.8s 1.3s both;
+}
+.active .list_img ul li:nth-child(6){
+	animation: fadeInUp 0.8s 1.5s both;
+}
+.active .list_img ul li:nth-child(7){
+	animation: fadeInUp 0.8s 1.7s both;
+}
+.active .list_img ul li:nth-child(8){
+	animation: fadeInUp 0.8s 1.9s both;
+}
+.active .list_img ul li:nth-child(9){
+	animation: fadeInUp 0.8s 2.1s both;
+}
+
+/*第3页样式*/
+.page3.active .solgan{
+	animation: rotateInDownLeft 1s 0.5s both;
+}
+.view{
+	width: 375px;
+	margin: 0 auto;
+	height:200px;
+	margin-top:6vh;
+	overflow: hidden;
+
+}
+.view .img{
+	width:75px;
+	float: left;
+	margin-left: 65px;
+}
+.img img{width:65.5px;height: 144px;}
+.active .view .img{
+	animation: bounceInLeft 2s 0.7s both;
+}
+.txt_1{
+	width:125px;
+	float: left;
+	margin: 45px 0 0 25px;
+}
+.active .txt_1{
+	animation:  bounceInRight 2s 0.7s both;
+}
+.txt_1 p{
+	font-family: "Arial", "Hoefler Text",  Serif;
+	font-size: 12px;
+	color: #fbe77b;
+	line-height: 18px;
+}
+.txt_1 p strong{
+	color: #fced9c;
+}
+.btn{
+	height: 42px;
+    text-align: center;
+}
+.btn a{
+	margin: 0 10px;
+	display: inline-block;
+	width:125px;
+	height: 40px;
+	border:1px solid #fced9c;
+	text-decoration: none;
+	color: #FCED9C;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+   
+       }
+ .active .btn a:first-child{
+ 	animation: bounceInUp 2s 2s both;
+ }
+ .active .btn a:last-child{
+ 	animation: bounceInUp 2s 2.2s both;
+ }
+.btn a:hover{
+	background: #fced9c; color: #000;
+}
+.tip{
+	margin-top: 2vh;
+	height: 25px;
+	line-height: 25px;
+	color: #947553;
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: 12px;
+}
+.act .tip{
+	animation: fadeInUpBig 2s 2s both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

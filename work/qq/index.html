@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>钱包</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="loading" class="loading">
+		  <h2></h2>
+	</div>
+	<div class="layout">
+<!--	第一页开始   -->
+		<div class="page1 section">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+			<div class="solgan">
+				<img src="images/02.png" alt="">
+			</div>
+			<div class="list">
+				<ul>
+					<li>
+						<div class="dot"> 
+						</div>
+						<div class="txt">
+							<h4>2015/7/4</h4>
+							<h5>QQ钱包积分上线</h5>
+						</div>
+					</li>
+					<li>
+						
+						<div class="txt">
+							<h4>2015/9/14-21</h4>
+							<h5>钱包积分日活动</h5>
+							<h6>（7天抽7台iphone 6）</h6>
+						</div>
+						<div class="dot">
+						</div>
+					</li>
+					<li>
+						<div class="dot">
+						</div>
+						<div class="txt">
+							<h4>2015/10/25-11/2</h4>
+							<h5>钱包积分日活动</h5>
+							<h6>（京东E卡限时抢购）</h6>
+						</div>
+					</li>
+					<li>
+						
+						<div class="txt">
+							<h4>2015/9/14-21</h4>
+							<h5>积分页面改版</h5>
+							<h6>视觉全面提升</h6>
+						</div>
+						<div class="dot">
+						</div>
+					</li>
+					<li>
+						<div class="dot">
+						</div>
+						<div class="txt">
+							<h4>2015/12/16</h4>
+							<h5>钱包积分 感谢有你</h5>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="arrow">
+				<img src="images/01.png"/>
+			</div>
+		</div>
+<!--     第一页结束    -->
+	
+<!--     第二页开始  	-->
+		<div class="page2 section">
+			<div class="logo">
+				<img src="images/logo.png"/>
+			</div>
+			<div class="solgan">
+				<img src="images/05.png"/>
+			</div>
+			<div class="list_img">
+				<ul>
+					<li><img src="images/06.jpg"/></li>
+					<li><img src="images/07.jpg"/></li>
+					<li><img src="images/08.jpg"/></li>
+					<li><img src="images/09.jpg"/></li>
+					<li><img src="images/10.jpg"/></li>
+					<li><img src="images/11.jpg"/></li>
+					<li><img src="images/12.jpg"/></li>
+					<li><img src="images/13.jpg"/></li>
+					<li><img src="images/14.jpg"/></li>
+				</ul>
+			</div>
+			<div class="arrow">
+				<img src="images/01.png"/>
+			</div>
+		</div>
+<!--    第二页结束   -->
+
+<!--    第三页开始   -->
+	
+		<div class="page3 section">
+			<div class="logo">
+				<img src="images/logo.png"/>
+			</div>
+			<div class="solgan">
+				<img src="images/15.png" alt="">
+			</div>
+			<div class="view">
+				<div class="img">
+					<img src="images/16.png"/>
+				</div>
+				<div class="txt_1">
+					<p>2015、11、16-25<br/>狂抽&nbsp;<strong>15台 iPhone 6</strong><br/>奖品优惠兑换~</p>
+				</div>
+			</div>
+			<div class="btn">
+				<a href="#" >去积分页面</a>
+				<a href="#" >分享给好友</a>
+			</div>
+			<div class="tip">
+				温馨提示：新的一年，钱包积分会重新开始累积。
+			</div>
+		</div>
+<!--  第三页线束    -->
+	</div>
+	<script src="js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+<script>
+//进度加载
+var images =new Array(),count = 0;
+$('html,body').find('img').each(function(i) {
+	images[i]=$(this).attr('src');
+});
+for (var i = 0; i < images.length; i++) {
+	img = new Image;
+	img.src = images[i];
+	img.onload = function() {
+		count++;
+		var per = Math.floor(count/images.length*100);
+		
+		$('#loading h2').html('正在加载'+per+'%');
+		if(count==images.length)
+		{           
+			$('#loading').fadeOut();
+			$('.layout').fadeIn();	
+			fp();
+		}
+	}
+};
+
+var fp = function () {
+	$('.layout').fullpage({
+			anchors: ['page1', 'page2', 'page3'],
+			'navigation': false,
+			'navigationPosition': 'right',
+			afterLoad: function(anchorLink, index){
+				
+			},
+			onLeave: function(index, direction){
+				
+			}
+		});
+}
+	
+</script>	
+</body>
+</html>
