@@ -95,7 +95,7 @@ h2#contact:before {background-position: right bottom;}
 #bio {position: relative;}
 #bio #avatar {float: left; margin: 0 20px 0 0;}
 #bio h2 {font-size: 15px;}
-#bio p {
+#bio .bio-mes{
 	clear: left; 
 	margin:40px auto; 
 	padding:40px 45px; 
@@ -108,8 +108,21 @@ h2#contact:before {background-position: right bottom;}
 	border-color: #fff #f3f3f3 #e8e8e8;
 	line-height: 1.6em;
 }
+/*#bio p {
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 560px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+}*/
 #bio iframe {margin: 0 auto; display: block;}
-#bio p a {
+/*#bio p a {
 	text-decoration: none;
 	border: none;
 	background: #444;
@@ -119,7 +132,7 @@ h2#contact:before {background-position: right bottom;}
 }
 #bio p a:hover {text-decoration:none; color: #fff; background: #222;}
 
-#bio a.selectedWork {visibility: hidden; padding: 0; margin: 0;}
+#bio a.selectedWork {visibility: hidden; padding: 0; margin: 0;}*/
 
 #socialIcons {width: 50%; height: 30px; position: absolute; top: -35px; right: 0; text-align: right;}
 .socialIcon {
