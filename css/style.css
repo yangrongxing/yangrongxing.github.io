@@ -179,6 +179,7 @@ ul#recommends li > h3 {background: #fafafa; color: #ccc; padding-left: 5px; line
 /*---AS SEEN ON STUFF------*/
 /* -----------------------*/
 ul#seenOn li {display: inline-block; position: relative; border: 1px solid #eee; margin-right: 2px; height: 85px; border-radius: 4px; line-height: 30px;}
+ul#seenOn li a{display: block;}
 ul#seenOn li img {height:75px; width:140px; padding: 3px;}
 
 /* ------------------------*/
