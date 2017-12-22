@@ -68,3 +68,6 @@ ul#skills li del {display: none;}
 h2#contact,
 #contactform,
 #messageSent {display: none;}
+img{
+	max-width: 100%;
+}
