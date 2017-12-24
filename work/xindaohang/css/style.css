@@ -276,7 +276,7 @@ body{background: #fff;}
 	position: absolute;
 	width: 250px;
 	height: 20px;
-	right:830px;
+	left: 588px;
 	bottom: 0;
 	overflow: hidden;
 	z-index: 1;
